@@ -144,7 +144,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!114 &206649832
 MonoBehaviour:
@@ -296,7 +296,7 @@ MonoBehaviour:
   - positions: 010000000100000001000000
   - positions: 030000000300000003000000
   - positions: 020000000200000002000000
-  state: 0
+  state: 3
   percision: 5
   useSuppliedResult: 0
   waitingForResult: 0
@@ -386,14 +386,14 @@ MonoBehaviour:
   persistant: 1
   betPerLineDefaultIndex: 0
   betPerLineIndex: 0
-  credits: 0
+  credits: 190
   queue: 0
   countingQueue: 0
-  lastWin: 0
+  lastWin: 3
   betPerLine: 1
   linesPlayed: 3
-  totalIn: 0
-  totalOut: 0
+  totalIn: 3
+  totalOut: 3
 --- !u!4 &206649838
 Transform:
   m_ObjectHideFlags: 0
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6d780f4a567a849beb12a5ec526129, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: {fileID: 0}
+  skin: {fileID: 11400000, guid: c9133c91cd117417d0000cf8a220b639, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,9 +591,200 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 0.47, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1470699576
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1470699583}
+  - component: {fileID: 1470699582}
+  - component: {fileID: 1470699581}
+  - component: {fileID: 1470699580}
+  - component: {fileID: 1470699579}
+  - component: {fileID: 1470699578}
+  - component: {fileID: 1470699577}
+  m_Layer: 0
+  m_Name: Slot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 1
+  m_IsActive: 1
+--- !u!114 &1470699577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b106581ffc16954ea516e841078f675, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMode: 1
+  activeRNG: 0
+  reelHeight: 5
+  reelIndent: 1
+  numberOfReels: 3
+  horizontalReelPaddingPercent: 0
+  verticalSymbolPaddingPercent: 0
+  spinTime: 1
+  spinTimeIncPerReel: 0.5
+  spinTimeScatterAnticipation: 0.5
+  spinningSpeed: 0.033
+  easeOutTime: 0.5
+  reelEase: 24
+  reelCenter: {fileID: 0}
+  usePool: 1
+  symbolBgPrefabs: []
+  symbolPrefabs: []
+  symbolInfo: []
+  displayLineBoxes: 0
+  lineboxPrefab: {fileID: 0}
+  winboxPrefabs: []
+  reelFrequencies: []
+  symbolFrequencies: 
+  symbolSetNames: []
+  edsave:
+    autoCompute: 0
+    returnPercent: 0
+    returnTotalWon: 0
+    returnTotalBet: 0
+    returnData: 
+    returnPercentItterations: 10000
+    showBasicSettingsPanel: 0
+    showSymbolSetupPanel: 0
+    symbolDeclarations: 0
+    showOccurences: 0
+    showSymbolSetsPanel: 0
+    showLinesSetupPanel: 0
+    showReturnPanel: 0
+    showNotificationsPanel: 1
+  betsPerLine:
+  - value: 1
+    canBet: 1
+  symbolSets: []
+  setPays: []
+  lines: []
+  state: 0
+  percision: 0
+  useSuppliedResult: 0
+  waitingForResult: 0
+--- !u!114 &1470699578
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fac8f18cb2b742c4881a3e7c15092b0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linesEnabled: 1
+  linesZorder: -0.001
+  linesShader: {fileID: 0}
+  payLineWidth: 0.1
+  strokeWidth: 0.075
+  payLineColor1: {r: 1, g: 1, b: 1, a: 1}
+  payLineColor2: {r: 1, g: 1, b: 1, a: 1}
+  strokeColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &1470699579
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d05dea7b448022243bedc8256386248a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showWinTime: 2
+  delayBetweenShowingWins: 0.25
+--- !u!114 &1470699580
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c11e7e483e3d28246bde7d7a6b6cf300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itterations: 0
+  betPerLineEditor: 0
+  linesPlayedEditor: 0
+  progress: 0
+  totalwon: 0
+  totalbet: 0
+  timeToCompute: 0
+  timeToComputeIterations: 0
+  estimatedTimeToCompute: 0
+  netPayi: 0
+  variance: 0
+  standardDeviation: 0
+  volitility: 0
+--- !u!114 &1470699581
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc23b5595a7ddf4dab0a5b8d5912bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1470699582
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61c97c67c9a06314194cde95c5deffd1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  persistant: 1
+  betPerLineDefaultIndex: 0
+  betPerLineIndex: 0
+  credits: 0
+  queue: 0
+  countingQueue: 0
+  lastWin: 0
+  betPerLine: 1
+  linesPlayed: 1
+  totalIn: 0
+  totalOut: 0
+--- !u!4 &1470699583
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470699576}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
